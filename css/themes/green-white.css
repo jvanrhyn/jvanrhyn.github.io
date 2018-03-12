@@ -1,0 +1,13 @@
+/* Theme */
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+main {
+	background: #43A047;
+	color: #FAFAFA;
+}
+
+.icons-social a i {
+	color: #FAFAFA;
+}
+
