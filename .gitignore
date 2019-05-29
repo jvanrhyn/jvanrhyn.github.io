@@ -1,2 +1,4 @@
 react-landing/node_modules
 .DS_Store
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
