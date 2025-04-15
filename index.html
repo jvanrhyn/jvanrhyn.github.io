@@ -5,36 +5,128 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Johan van Rhyn • Systems Architect • m(O.o)M</title>
+	<title>Johan van Rhyn • Personal Site</title>
 
 	<link rel="icon" href="favicon-32x32.png" type="image/png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<link rel="stylesheet" href="css/themes/white-blue.css">
-	<!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+	<link rel="stylesheet" href="css/themes/blue-theme.css">
 </head>
 <body>
-	<main>	
-		<div class="intro">Hello, I am Johan</div>
-		<div class="tagline">Husband • Father • Grandfather • Head of Technology • Bionicle • Coder • Person • Fedinaut™</div>
-		<div class="icons-social">
-			<a rel="me" target="_blank" href="https://mastodon.world/@jvanrhyn"><i class="fab fa-mastodon"></i></a>
-			<a target="_blank" href="https://github.com/jvanrhyn"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://stackoverflow.com/users/205988/jvanrhyn?tab=profile"><i class="fab fa-stack-overflow"></i></a>
-			<a target="_blank" href="https://www.linkedin.com/in/jvanrhyn"><i class="fab fa-linkedin"></i></a>
-    </div>
+	<header>
+		<div class="container">
+			<nav>
+				<div class="logo">JvR</div>
+				<div class="nav-links">
+					<a href="#about">About</a>
+					<a href="#skills">Skills</a>
+					<a href="#connect">Connect</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<div class="hero-text">
+						<h1 class="intro">Hello, I am <span>Johan</span></h1>
+						<p class="tagline">Systems Architecture for the modern world</p>
+						<div class="subtitle">Husband • Father • Grandfather • Head of Technology • Bionicle • Coder • Person • Fedinaut™</div>
+						<div class="cta">
+							<a href="#connect" class="btn primary-btn">Connect with me</a>
+							<a href="#about" class="btn secondary-btn">Learn more</a>
+						</div>
+					</div>
+					<div class="hero-image">
+						<!-- Optional: You could add a profile image here -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="cards-container">
+					<div class="card">
+						<div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+						<h3>Technology Leader</h3>
+						<p>Focused on creating innovative solutions and guiding technical teams to success.</p>
+					</div>
+					<div class="card">
+						<div class="card-icon"><i class="fas fa-cogs"></i></div>
+						<h3>Systems Architect</h3>
+						<p>Designing robust systems that scale with business needs.</p>
+					</div>
+					<div class="card">
+						<div class="card-icon"><i class="fas fa-code-branch"></i></div>
+						<h3>Software Developer</h3>
+						<p>Building applications with clean code and thoughtful architecture.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="skills">
+			<div class="container">
+				<h2 class="section-title">Skills & Expertise</h2>
+				<div class="skill-grid">
+					<div class="skill-item">
+						<div class="skill-name">Architecture</div>
+						<div class="skill-bar">
+							<div class="skill-level" style="width: 95%"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<div class="skill-name">Leadership</div>
+						<div class="skill-bar">
+							<div class="skill-level" style="width: 90%"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<div class="skill-name">Software Development</div>
+						<div class="skill-bar">
+							<div class="skill-level" style="width: 85%"></div>
+						</div>
+					</div>
+					<div class="skill-item">
+						<div class="skill-name">Project Management</div>
+						<div class="skill-bar">
+							<div class="skill-level" style="width: 80%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="connect" class="connect">
+			<div class="container">
+				<h2 class="section-title">Connect With Me</h2>
+				<p class="connect-subtitle">Find me on these platforms</p>
+				<div class="icons-social">
+					<a rel="me" target="_blank" href="https://mastodon.social/@jvanrhyn" class="social-link"><i class="fab fa-mastodon"></i></a>
+					<a target="_blank" href="https://github.com/jvanrhyn" class="social-link"><i class="fab fa-github"></i></a>
+					<a target="_blank" href="https://stackoverflow.com/users/205988/jvanrhyn?tab=profile" class="social-link"><i class="fab fa-stack-overflow"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/jvanrhyn" class="social-link"><i class="fab fa-linkedin"></i></a>
+				</div>
+			</div>
+		</section>
 	</main>
 	
+	<footer>
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-text">&copy; 2025 Johan van Rhyn. All rights reserved.</div>
+			</div>
+		</div>
+	</footer>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115523121-1"></script>
 <script>
@@ -44,7 +136,5 @@
 
   gtag('config', 'UA-115523121-1');
 </script>
-
-
 </body>
 </html>
