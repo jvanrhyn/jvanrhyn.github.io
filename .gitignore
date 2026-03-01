@@ -4,3 +4,5 @@ react-landing/node_modules
 /.vs/slnx.sqlite
 
 \.vs/
+review.md
+.vscode/.checkmarxIgnored
