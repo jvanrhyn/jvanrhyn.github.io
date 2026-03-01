@@ -2,15 +2,22 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Johan van Rhyn — Systems Architect, Technology Leader, and Software Developer.">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Johan van Rhyn • Personal Site">
+	<meta property="og:description" content="Systems Architecture for the modern world">
+	<meta property="og:image" content="https://jvanrhyn.github.io/jvanrhyn.jpeg">
+	<meta property="og:url" content="https://jvanrhyn.github.io">
+	<meta property="og:type" content="website">
 
 	<title>Johan van Rhyn • Personal Site</title>
 
 	<link rel="icon" href="favicon-32x32.png" type="image/png" />
+	<link rel="manifest" href="site.webmanifest">
 
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -80,25 +87,25 @@
 					<div class="skill-item">
 						<div class="skill-name">Architecture</div>
 						<div class="skill-bar">
-							<div class="skill-level" style="width: 95%"></div>
+							<div class="skill-level" style="width: 95%" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Architecture: 95%"></div>
 						</div>
 					</div>
 					<div class="skill-item">
 						<div class="skill-name">Leadership</div>
 						<div class="skill-bar">
-							<div class="skill-level" style="width: 90%"></div>
+							<div class="skill-level" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Leadership: 90%"></div>
 						</div>
 					</div>
 					<div class="skill-item">
 						<div class="skill-name">Software Development</div>
 						<div class="skill-bar">
-							<div class="skill-level" style="width: 85%"></div>
+							<div class="skill-level" style="width: 85%" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Software Development: 85%"></div>
 						</div>
 					</div>
 					<div class="skill-item">
 						<div class="skill-name">Project Management</div>
 						<div class="skill-bar">
-							<div class="skill-level" style="width: 80%"></div>
+							<div class="skill-level" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Project Management: 80%"></div>
 						</div>
 					</div>
 				</div>
@@ -110,10 +117,10 @@
 				<h2 class="section-title">Connect With Me</h2>
 				<p class="connect-subtitle">Find me on these platforms</p>
 				<div class="icons-social">
-					<a rel="me" target="_blank" href="https://mastodon.social/@jvanrhyn" class="social-link"><i class="fab fa-mastodon"></i></a>
-					<a target="_blank" href="https://github.com/jvanrhyn" class="social-link"><i class="fab fa-github"></i></a>
-					<a target="_blank" href="https://stackoverflow.com/users/205988/jvanrhyn?tab=profile" class="social-link"><i class="fab fa-stack-overflow"></i></a>
-					<a target="_blank" href="https://www.linkedin.com/in/jvanrhyn" class="social-link"><i class="fab fa-linkedin"></i></a>
+					<a rel="me" target="_blank" href="https://mastodon.social/@jvanrhyn" class="social-link" aria-label="Mastodon"><i class="fab fa-mastodon"></i></a>
+					<a target="_blank" href="https://github.com/jvanrhyn" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+					<a target="_blank" href="https://stackoverflow.com/users/205988/jvanrhyn?tab=profile" class="social-link" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/jvanrhyn" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 				</div>
 			</div>
 		</section>
@@ -122,19 +129,11 @@
 	<footer>
 		<div class="container">
 			<div class="footer-content">
-				<div class="footer-text">&copy; 2025 Johan van Rhyn. All rights reserved.</div>
+				<div class="footer-text">&copy; <span id="copyright-year"></span> Johan van Rhyn. All rights reserved.</div>
 			</div>
 		</div>
 	</footer>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115523121-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-115523121-1');
-</script>
+<script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
